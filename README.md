@@ -5,5 +5,7 @@ Also uses price conversion API that exchanges from current dynadot price of USD 
 Requirements:
 
 import bs4
+
 import requests
+
 import json
