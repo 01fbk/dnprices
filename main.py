@@ -18,7 +18,7 @@ def dynadot():
 
     tab = html.find(name='div', id='St_Data_Info')
     for row in tab.find_all('p', class_='tld-content'):
-        tld = row.find('a')
+        tld = row.find('a').text
         dynadot_usd = float(row.find('span', class_='span-register-price').text.strip()[1:])
         dynadot_euro = float(dynadot_usd) * euro
         dynadot_pounds = float(dynadot_usd) * pound
